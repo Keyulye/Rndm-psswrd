@@ -1,0 +1,23 @@
+import random
+import string
+
+def generate_password(length, complexity):
+    characters = string.ascii_letters + string.digits + string.punctuation
+
+    if complexity == "medium":
+        characters = string.ascii_letters + string.digits
+    elif complexity == "low":
+        characters = string.ascii_lowercase + string.digits
+
+    password = random.choices(characters, k=length)
+    return "".join(password)
+
+def main():
+    length = int(input("Enter the length of the password: "))
+    complexity = input("Enter the complexity level (high/medium/low): ")
+
+    password = generate_password(length, complexity)
+    print("Generated Password:", password)
+
+if __name__ == "__main__":
+    main()
