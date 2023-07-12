@@ -1,2 +1,3 @@
 # Rndm-psswrd
 program that generates a random password based on user-specified length and complexity
+In this code, the generate_password function generates a random password based on the specified length and complexity level. The string module provides various character sets to create the password, such as uppercase letters, lowercase letters, digits, and punctuation. The complexity level determines which character sets are used to generate the password. The main function prompts the user to input the desired length and complexity level of the password, and then calls the generate_password function to generate and display the random password.
